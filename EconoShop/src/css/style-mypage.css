@@ -1,9 +1,22 @@
+@font-face {
+    font-family: Pretendard-Bold;
+    src: url(../font/Pretendard-Bold.otf);
+}
+@font-face {
+    font-family: Pretendard-semibold;
+    src: url(../font/Pretendard-SemiBold.otf);
+}
+@font-face {
+    font-family: Pretendard-Regular;
+    src: url(../font/Pretendard-Regular.otf);
+}
+
 body {
     margin-bottom: 50rem;
 }
 
 form {
-    color: gray;
+    color: black;
     position: absolute;
     top: 40%;
 }
@@ -34,10 +47,18 @@ a:hover {
 }
 
 input {
-    margin: 1rem;
     border: none;
-    border-bottom: 0.1rem solid gray;
-    transition: 0.1s;
+    opacity: 0.5;
+    outline: none;
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.2rem;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .main-titleBox {
@@ -56,7 +77,7 @@ input {
     left: 5rem;
     color: #0066ff;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 800;
     position: relative;
     cursor: pointer;
 }
@@ -82,3 +103,91 @@ input {
     margin-right: 6rem;
 }
 
+.mypage-content {
+    display: flex;
+}
+
+.user-log {
+    flex-direction: column;
+    top: 4rem;
+    left: 2rem;
+    padding: 1rem;
+    position: relative; 
+}
+
+.a-visited {
+    font-weight: 800;
+    color: #0066ff;
+}
+
+.user-info {
+    flex-direction: column;
+    top: 8rem;
+    left: 22rem;
+    position: relative;
+}
+
+.user-s {
+    top: 4rem;
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.user-semester {
+    border-bottom: none;
+    flex-direction: row;
+}
+
+.user-border {
+    display: block;
+    width: 40rem;
+    border-bottom: 0.1rem solid gray;
+}
+
+.info-modify {
+    position: relative;
+    left: 4rem;
+}
+
+.modify-btn {
+    border: none;
+    padding: 0.8rem;
+    width: 20rem;
+    font-size: 1.3rem;
+    background-color: #0066ff;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    border: none;
+    padding: 0.8rem;
+    width: 20rem;
+    font-size: 1.3rem;
+    background-color: #A3A3A3A3;
+    color: white;
+    cursor: pointer;
+}
+
+.section-info {
+    display: none;
+}
+
+.section-cart {
+    display: none;
+}
+
+.section-history {
+    display: none;
+}
+
+.user-visible {
+    display: block;
+}
+
+.user-invisible {
+    display: none;
+}
